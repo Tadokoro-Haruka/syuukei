@@ -83,7 +83,6 @@ public class Trainingwork {
 				return;
 			}
 
-			//集計3-1
 			ArrayList<File> list = new ArrayList<File>();
 			File dir = new File(args[0]);
 
@@ -94,7 +93,6 @@ public class Trainingwork {
 				}
 			}
 
-			//連番
 			for (int i = 0; i<list.size() - 1 ; i++){
 
 				String s =  files[i].getName();
@@ -113,7 +111,6 @@ public class Trainingwork {
 				}
 			}
 
-			//集計3-2
 			for (int i = 0; i< list.size(); i++){
 				BufferedReader br = null;
 				try{
@@ -167,7 +164,6 @@ public class Trainingwork {
 				}
 			}
 
-			//支店別集計ファイル出力
 			try{
 				File file = new File(args[0],"branch.out");
 
@@ -194,7 +190,6 @@ public class Trainingwork {
 				System.out.println("予期せぬエラーが発生しました");
 			}
 
-			//商品別集計ファイル出力
 			try{
 				File filey = new File(args[0],"commodity.out");
 
